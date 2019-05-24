@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpAsClientController">
+   <children>
+      <ImageView fitHeight="213.0" fitWidth="759.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sign-up.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="262.0" text="User-Id: " />
+      <Label layoutX="50.0" layoutY="292.0" text="Password: " />
+      <Label layoutX="50.0" layoutY="323.0" text="confirmPassword: " />
+      <TextField fx:id="confirmpass_TF" layoutX="152.0" layoutY="319.0" />
+      <TextField fx:id="password_TF" layoutX="152.0" layoutY="288.0" />
+      <TextField fx:id="userId_TF" layoutX="152.0" layoutY="258.0" />
+      <Label layoutX="307.0" layoutY="262.0" text="\@group5.cps" />
+      <Button fx:id="Submit_btn" layoutX="104.0" layoutY="360.0" mnemonicParsing="false" onAction="#signUp_click" prefHeight="25.0" prefWidth="97.0" text="Submit" />
+      <ImageView fitHeight="235.0" fitWidth="624.0" layoutX="-4.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../signup.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

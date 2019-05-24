@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Parking_OrderController">
+   <children>
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="39.0" prefWidth="367.0" text="Parking order" textFill="#ff0101">
+         <font>
+            <Font name="Bernard MT Condensed" size="39.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="oneTimeParkingOrder_radio" layoutX="69.0" layoutY="137.0" mnemonicParsing="false" onAction="#oneTimeParkingOrder_click" text="One time parking order">
+         <toggleGroup>
+            <ToggleGroup fx:id="Order_kind" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="subscribeMonthly_radio" layoutX="69.0" layoutY="163.0" mnemonicParsing="false" onAction="#subscribeMonthly_click" text="Subscribe Monthly" toggleGroup="$Order_kind" />
+      <RadioButton fx:id="localParkOrder_radio" layoutX="69.0" layoutY="110.0" mnemonicParsing="false" onAction="#localParkOrder_click" text="Parking order for the local car park" toggleGroup="$Order_kind" />
+      <Label layoutX="33.0" layoutY="53.0" text="Choose the wanted kind of parking order:" textFill="#4300e1">
+         <font>
+            <Font name="Aldhabi" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="208.0" text="Fill the following information:" textFill="#0202ee">
+         <font>
+            <Font name="Californian FB Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="254.0" text="Car Number:" />
+      <Label layoutX="34.0" layoutY="313.0" text="Start Date: " />
+      <Label layoutX="33.0" layoutY="342.0" text="Beginning Time: " />
+      <Label layoutX="33.0" layoutY="402.0" prefHeight="17.0" prefWidth="59.0" text="End Time: " />
+      <Label layoutX="33.0" layoutY="372.0" text="End Date: " />
+      <Label layoutX="33.0" layoutY="282.0" text="Email (client ID):" />
+      <Label layoutX="31.0" layoutY="433.0" text="The requested parking lot: " />
+      <DatePicker fx:id="start_date" layoutX="148.0" layoutY="309.0" onAction="#getStartDate" prefHeight="25.0" prefWidth="196.0" showWeekNumbers="true" />
+      <DatePicker fx:id="end_date" layoutX="148.0" layoutY="368.0" onAction="#getEndDate" prefHeight="25.0" prefWidth="196.0" showWeekNumbers="true" />
+      <TextField fx:id="email_TF" layoutX="148.0" layoutY="278.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="beginningTime_TF" layoutX="148.0" layoutY="338.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="endTime_TF" layoutX="148.0" layoutY="398.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="carNum_TF" layoutX="148.0" layoutY="250.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="requestedLot_TF" layoutX="181.0" layoutY="429.0" prefHeight="25.0" prefWidth="162.0" />
+      <ImageView fitHeight="156.0" fitWidth="205.0" layoutX="420.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../choose-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="501.0" layoutX="401.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../order.icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="submit_btn" layoutX="51.0" layoutY="492.0" mnemonicParsing="false" onAction="#submit_click" prefHeight="30.0" prefWidth="78.0" text="Submit" />
+      <Button fx:id="cancel_btn" layoutX="172.0" layoutY="492.0" mnemonicParsing="false" onAction="#cancel_click" prefHeight="30.0" prefWidth="78.0" text="Cancel" />
+   </children>
+</AnchorPane>

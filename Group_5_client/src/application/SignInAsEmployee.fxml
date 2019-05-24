@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignInAsEmployeeController">
+   <children>
+      <Label layoutX="233.0" layoutY="35.0" text="Employee-Id: " wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="233.0" layoutY="74.0" text="Password: ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="employeeID_TF" layoutX="350.0" layoutY="36.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../employee-logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signIn_btn" layoutX="378.0" layoutY="116.0" mnemonicParsing="false" onAction="#signIn_click" prefHeight="25.0" prefWidth="94.0" text="Sign in" />
+      <ImageView fitHeight="461.0" fitWidth="609.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../employee-pack.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password_TF" layoutX="350.0" layoutY="75.0" />
+   </children>
+</AnchorPane>

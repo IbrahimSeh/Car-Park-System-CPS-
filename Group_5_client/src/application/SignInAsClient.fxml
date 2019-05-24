@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignInAsClientController">
+   <children>
+      <Label layoutX="90.0" layoutY="50.0" prefHeight="17.0" prefWidth="178.0" text="Please insert your details:" />
+      <Label fx:id="userId" layoutX="90.0" layoutY="83.0" prefHeight="17.0" prefWidth="60.0" text="User-ID:" />
+      <Label fx:id="password" layoutX="90.0" layoutY="114.0" prefHeight="17.0" prefWidth="60.0" text="Password:" />
+      <TextField fx:id="userIdTF" layoutX="150.0" layoutY="79.0" />
+      <Button fx:id="connectBtn" layoutX="167.0" layoutY="154.0" mnemonicParsing="false" onAction="#connect_click" prefHeight="32.0" prefWidth="107.0" text="Connect" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="121.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sign-up-below.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signUp_Btn" layoutX="167.0" layoutY="291.0" mnemonicParsing="false" onAction="#signUpAsClient_click" prefHeight="32.0" prefWidth="107.0" text="Sign Up" />
+      <PasswordField fx:id="passwordTF" layoutX="150.0" layoutY="110.0" />
+   </children>
+</AnchorPane>

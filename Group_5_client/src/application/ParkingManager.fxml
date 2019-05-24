@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ParkingManagerController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="title" alignment="CENTER" disable="false" focusTraversable="false" layoutX="106.0" layoutY="25.0" opacity="1.0" text="Parking Manager" textAlignment="CENTER" visible="true" wrapText="false">
+      <font>
+        <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button id="submit_btn" fx:id="addnewemp_btn" layoutX="43.0" layoutY="110.0" mnemonicParsing="false" onAction="#addnewemp_Click" text="Add a new employee" />
+    <Button id="submit_btn" fx:id="setting_btn" layoutX="43.0" layoutY="72.0" mnemonicParsing="false" onAction="#setting_Click" text="Setting the rates for payment" />
+    <ImageView fitHeight="116.45456910511179" fitWidth="175.00003051757812" layoutX="226.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../ParkingManager.jpg" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NetworkManagerController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="title" alignment="CENTER" disable="false" focusTraversable="false" layoutX="92.0" layoutY="25.0" opacity="1.0" text="NetWork Manager" textAlignment="CENTER" visible="true" wrapText="false">
+      <font>
+        <Font name="Comic Sans MS Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button id="submit_btn" fx:id="Current_btn" layoutX="40.0" layoutY="110.0" mnemonicParsing="false" onAction="#currentParkingStatus_Click" text="Current Parking situation" />
+    <Button id="submit_btn" fx:id="Setting_btn" layoutX="40.0" layoutY="79.0" mnemonicParsing="false" onAction="#settingRates_Click" text="Setting the rates for payment" />
+    <ImageView fitHeight="134.68040466308594" fitWidth="522.5599880597782" layoutX="-1.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../Networkmanager.jpg" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

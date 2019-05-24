@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckOrderStatusController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="userId" fx:id="Idorder_btn" layoutX="89.0" layoutY="160.0" prefHeight="17.000091552734375" prefWidth="60.0" text="ID_Order" />
+    <TextField id="userIdTF" fx:id="id_TF" layoutX="162.0" layoutY="160.0" />
+    <Button id="connectBtn" fx:id="cancel_btn" layoutX="208.0" layoutY="215.0" mnemonicParsing="false" onAction="#cancel_click" prefHeight="40.0" prefWidth="99.0" text="Cancel" />
+    <Button id="connectBtn" fx:id="submit_btn" layoutX="89.0" layoutY="215.0" mnemonicParsing="false" onAction="#submit_click" prefHeight="40.0" prefWidth="99.0" text="Submit" />
+    <ImageView fitHeight="150.79466773986817" fitWidth="422.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../CheckOrderStatus.jpg" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

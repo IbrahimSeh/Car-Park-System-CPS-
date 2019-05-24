@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-4.0" prefHeight="400.0" prefWidth="429.0">
+         <children>
+            <Label id="userId" fx:id="Text_btn" layoutX="16.0" layoutY="255.0" prefHeight="17.000091552734375" prefWidth="60.0" text="Text:" />
+            <Button id="connectBtn" fx:id="send_btn" layoutX="93.0" layoutY="355.0" mnemonicParsing="false" onAction="#send_click" prefHeight="40.0" prefWidth="99.0" text="send" />
+            <ImageView id="report_pic" fx:id="report_im" fitHeight="208.0" fitWidth="498.0" layoutX="-2.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../report-image.jpg" />
+               </image>
+            </ImageView>
+            <Label id="userId" fx:id="id_btn" layoutX="14.0" layoutY="217.0" prefHeight="17.000091552734375" prefWidth="60.0" text="ID_Order:" />
+            <TextField id="userIdTF" fx:id="txtid_TF" layoutX="93.0" layoutY="215.0" />
+            <Button id="connectBtn" fx:id="cancel_btn" layoutX="290.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancel_click" prefHeight="40.0" prefWidth="99.0" text="Cancel" />
+            <TextArea fx:id="Text_TF" layoutX="93.0" layoutY="255.0" prefHeight="94.0" prefWidth="294.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
